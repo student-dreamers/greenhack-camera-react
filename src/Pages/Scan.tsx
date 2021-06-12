@@ -22,7 +22,8 @@ const IFrame = styled.iframe`
 function Scan() {
     const [product, setProduct] = useState('')
     const handleMessage = (e: MessageEvent) => {
-        console.log(e)
+        console.log(e.type)
+        console.log(e.data)
         if (e.data.type === 'IKEA')
             setProduct(e.data.ikeaName)
     }
