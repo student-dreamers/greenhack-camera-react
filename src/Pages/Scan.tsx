@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Frame} from '../Components/Frame';
 import {Title} from '../Components/Text';
 import styled from "styled-components";
@@ -21,20 +21,12 @@ const IFrame = styled.iframe`
 
 function Scan() {
     const [product, setProduct] = useState('')
-    const handleMessage = (e: MessageEvent) => {
-        console.log(e.type)
-        console.log(e.data)
-        if (e.data.type === 'IKEA')
-            setProduct(e.data.ikeaName)
-    }
 
-    useEffect(() => {
-        window.addEventListener('message', handleMessage);
-
-        return () => {
-            window.removeEventListener('message', handleMessage);
-        };
-    }, []);
+    window.ikea = (s: any) => {
+        console.log('SCAN: ', s)
+        if (s)
+            setProduct(s)
+    };
 
     return (
         <FrameBorderless>

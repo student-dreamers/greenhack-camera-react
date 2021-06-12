@@ -6,6 +6,14 @@ import store from "./redux/store";
 import App from './App';
 import './index.css';
 
+declare global {
+    interface Window {
+        ikea: any;
+    }
+}
+
+window.ikea = (s: any) => console.log('index: ', s);
+
 ReactDOM.render(
     <React.StrictMode>
         <ReduxProvider store={store}>
