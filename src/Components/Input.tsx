@@ -15,6 +15,20 @@ export const Button = styled(Link)`
   text-decoration: none;
 `
 
+export const ButtonAnchor = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: max-content;
+  min-width: 250px;
+  margin: 20px auto;
+  padding: 15px 25px;
+  background: #FFDA1A;
+  color: inherit;
+  text-decoration: none;
+`
+
 export const ButtonText = styled.span`
   font-weight: 400;
   padding: 0 5px;

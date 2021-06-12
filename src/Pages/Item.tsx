@@ -6,7 +6,7 @@ import {ListItemBuy} from "../Components/ListItem";
 import buy from "../Assets/buy";
 import {useParams} from "react-router-dom";
 import items from "../Assets/items";
-import {Button, ButtonText} from "../Components/Input";
+import {Button, ButtonAnchor, ButtonText} from "../Components/Input";
 
 
 const Image = styled.img`
@@ -27,7 +27,7 @@ const SmallText = styled.span`
   display: block;
   color: #212121;
   font-weight: 300;
-  margin: 5px 20px;
+  margin: 10px 20px 0;
 `
 
 function Item(props: any) {
@@ -40,7 +40,7 @@ function Item(props: any) {
             <Title>Your awesome {item.title}</Title>
             <Image src={item.image} />
             <Divider />
-            <Button to={item.eshop}><ButtonText>BUY</ButtonText></Button>
+            <ButtonAnchor href={item.eshop}><ButtonText>BUY</ButtonText></ButtonAnchor>
             <SmallText>EAN 420133769</SmallText>
             <SmallText>CODE a67h4d</SmallText>
             <Divider />

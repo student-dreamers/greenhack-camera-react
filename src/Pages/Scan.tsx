@@ -13,6 +13,8 @@ const FrameBorderless = styled(Frame)`
 `
 
 const TextSmall = styled.span`
+  display: block;
+  text-align: center;
   margin: 10px;
   color: #212121;
   font-weight: 300;
