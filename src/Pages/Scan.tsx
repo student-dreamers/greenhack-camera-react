@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Frame} from '../Components/Frame';
 import {Title} from '../Components/Text';
 import styled from "styled-components";
+import {Button, ButtonText} from "../Components/Input";
 
 const FrameBorderless = styled(Frame)`
   display: flex;
@@ -31,8 +32,9 @@ function Scan() {
     return (
         <FrameBorderless>
             <Title>Scan</Title>
-            <p>{product.toString()}</p>
             <IFrame allow="camera;microphone" src='https://student-dreamers.github.io/greenhack-camera/' title='camera' />
+            <span>Found: {product ? product : '...'}</span>
+            <Button to={product ? '#' : `/search/${product}`}><ButtonText>Search for {product ? product : '...'}</ButtonText></Button>
         </FrameBorderless>
     )
 }
