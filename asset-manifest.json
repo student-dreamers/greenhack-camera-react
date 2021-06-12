@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/greenhack-camera-react/static/css/main.9538832c.chunk.css",
+    "main.js": "/greenhack-camera-react/static/js/main.ce110497.chunk.js",
+    "main.js.map": "/greenhack-camera-react/static/js/main.ce110497.chunk.js.map",
+    "runtime-main.js": "/greenhack-camera-react/static/js/runtime-main.7c13220a.js",
+    "runtime-main.js.map": "/greenhack-camera-react/static/js/runtime-main.7c13220a.js.map",
+    "static/js/2.48d94f3f.chunk.js": "/greenhack-camera-react/static/js/2.48d94f3f.chunk.js",
+    "static/js/2.48d94f3f.chunk.js.map": "/greenhack-camera-react/static/js/2.48d94f3f.chunk.js.map",
+    "index.html": "/greenhack-camera-react/index.html",
+    "static/css/main.9538832c.chunk.css.map": "/greenhack-camera-react/static/css/main.9538832c.chunk.css.map",
+    "static/js/2.48d94f3f.chunk.js.LICENSE.txt": "/greenhack-camera-react/static/js/2.48d94f3f.chunk.js.LICENSE.txt",
+    "static/media/screw3.368f98c8.webp": "/greenhack-camera-react/static/media/screw3.368f98c8.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c13220a.js",
+    "static/js/2.48d94f3f.chunk.js",
+    "static/css/main.9538832c.chunk.css",
+    "static/js/main.ce110497.chunk.js"
+  ]
+}
