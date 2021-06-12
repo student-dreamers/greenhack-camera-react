@@ -13,6 +13,7 @@ const FrameBorderless = styled(Frame)`
 
 const IFrame = styled.iframe`
   flex: 1;
+  width: 100%;
   border: none;
   margin: 0;
   padding: 0;
@@ -21,6 +22,7 @@ const IFrame = styled.iframe`
 function Scan() {
     const [product, setProduct] = useState('')
     const handleMessage = (e: MessageEvent) => {
+        console.log(e)
         if (e.data.type === 'IKEA')
             setProduct(e.data.ikeaName)
     }
