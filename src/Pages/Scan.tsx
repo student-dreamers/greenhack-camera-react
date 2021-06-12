@@ -12,6 +12,13 @@ const FrameBorderless = styled(Frame)`
   padding: 0;
 `
 
+const TextSmall = styled.span`
+  margin: 10px;
+  color: #212121;
+  font-weight: 300;
+  font-size: 0.9rem;
+`
+
 const IFrame = styled.iframe`
   flex: 1;
   width: 100%;
@@ -32,12 +39,13 @@ function Scan() {
     return (
         <FrameBorderless>
             <Title>Scan</Title>
+            <TextSmall>Activate your camera by tapping on the black box</TextSmall>
             <IFrame allow="camera;microphone" src='https://student-dreamers.github.io/greenhack-camera/' title='camera' />
             <div style={{
                 opacity: product ? 1 : 0.1,
                 pointerEvents: product ? 'all' : 'none'
             }}>
-                <span>Found: {product ? product : '...'}</span>
+                <TextSmall>Found: {product ? product : '...'}</TextSmall>
                 <Button to={product ? `/search/${product}` : '#'}><ButtonText>Search for {product ? product : '...'}</ButtonText></Button>
             </div>
         </FrameBorderless>
