@@ -33,8 +33,13 @@ function Scan() {
         <FrameBorderless>
             <Title>Scan</Title>
             <IFrame allow="camera;microphone" src='https://student-dreamers.github.io/greenhack-camera/' title='camera' />
-            <span>Found: {product ? product : '...'}</span>
-            <Button to={product ? '#' : `/search/${product}`}><ButtonText>Search for {product ? product : '...'}</ButtonText></Button>
+            <div style={{
+                opacity: product ? 1 : 0.1,
+                pointerEvents: product ? 'all' : 'none'
+            }}>
+                <span>Found: {product ? product : '...'}</span>
+                <Button to={product ? `/search/${product}` : '#'}><ButtonText>Search for {product ? product : '...'}</ButtonText></Button>
+            </div>
         </FrameBorderless>
     )
 }
